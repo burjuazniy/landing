@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const NAV_LINKS = [
   { href: "#about", label: "Про проєкт" },
   { href: "#features", label: "Можливості" },
@@ -172,7 +174,7 @@ export default function Home() {
       <header role="banner" className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-zinc-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <a
+            <Link
               href="/"
               aria-label="Course Designer — на головну"
               className="flex items-center gap-2 font-semibold text-lg text-indigo-700 hover:text-indigo-600 transition-colors"
@@ -193,18 +195,18 @@ export default function Home() {
                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
               </svg>
               Course Designer
-            </a>
+            </Link>
 
             <nav aria-label="Основна навігація">
               <ul role="list" className="flex items-center gap-1 sm:gap-2">
                 {NAV_LINKS.map((link) => (
                   <li key={link.href}>
-                    <a
+                    <Link
                       href={link.href}
                       className="px-3 py-2 text-sm font-medium text-zinc-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-md transition-colors"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -243,7 +245,7 @@ export default function Home() {
               <strong className="text-zinc-800 font-semibold">Instructional Design</strong>
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
+              <Link
                 href="#about"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 text-base font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-md hover:shadow-lg transition-all"
               >
@@ -261,13 +263,13 @@ export default function Home() {
                 >
                   <path d="M12 5v14M19 12l-7 7-7-7" />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#features"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-indigo-700 bg-white hover:bg-indigo-50 border border-indigo-200 rounded-xl shadow-sm transition-all"
               >
                 Можливості
-              </a>
+              </Link>
             </div>
           </div>
         </section>
