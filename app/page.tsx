@@ -470,7 +470,7 @@ export default function Home() {
               Бакалаврська робота &mdash; розробка навчальної платформи на основі Instructional Design
             </p>
             <p className="text-sm">
-              <time dateTime="2025">2025</time>
+              <time dateTime="2026">2026</time>
             </p>
           </div>
         </div>
